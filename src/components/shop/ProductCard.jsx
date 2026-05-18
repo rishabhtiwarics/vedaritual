@@ -58,21 +58,42 @@ const ProductCard = ({ product }) => {
           </Link>
         </h3>
 
+        <p className="prod-card-desc" style={{ fontSize: '13px', color: 'var(--text-mid)', marginTop: '8px', marginBottom: '4px', display: '-webkit-box', WebkitLineClamp: 1, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+          {product.shortDescription}
+        </p>
+
         <div className="prod-card-footer">
           <span className="prod-card-price">₹{product.price}</span>
 
           <button
-            className="prod-card-add"
+            className="prod-card-add-text"
             onClick={handleAddToCart}
             disabled={isInCart}
-            aria-label={isInCart ? 'Added to bag' : 'Add to bag'}
-            title={isInCart ? 'Added to bag' : 'Add to bag'}
-            style={isInCart ? { background: 'var(--surface)', cursor: 'default', boxShadow: 'none' } : {}}
+            aria-label={isInCart ? 'In Bag' : 'Add to Cart'}
+            style={{
+              padding: '10px 16px',
+              fontSize: '10px',
+              fontWeight: '500',
+              textTransform: 'uppercase',
+              letterSpacing: '0.15em',
+              background: isInCart ? 'var(--surface)' : 'var(--primary)',
+              color: isInCart ? 'var(--text-dark)' : '#fff',
+              border: 'none',
+              borderRadius: '6px',
+              cursor: isInCart ? 'default' : 'pointer',
+              transition: 'all 0.3s ease',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px'
+            }}
           >
-            <i
-              className={isInCart ? 'fa-solid fa-check' : 'fa-solid fa-bag-shopping'}
-              style={{ fontSize: '13px' }}
-            ></i>
+            {isInCart ? (
+              <>
+                <i className="fa-solid fa-check" style={{ fontSize: '10px' }}></i> In Bag
+              </>
+            ) : (
+              'Add to Cart'
+            )}
           </button>
         </div>
       </div>

@@ -37,7 +37,6 @@ const Footer = () => {
                 <li><Link to="/">Home <i className="fa-solid fa-arrow-right"></i></Link></li>
                 <li><Link to="/about">About Us <i className="fa-solid fa-arrow-right"></i></Link></li>
                 <li><Link to="/shop">Shop All <i className="fa-solid fa-arrow-right"></i></Link></li>
-                <li><Link to="/story">Our Story <i className="fa-solid fa-arrow-right"></i></Link></li>
                 <li><a href="#">The Journal <i className="fa-solid fa-arrow-right"></i></a></li>
                 <li><Link to="/contact">Contact Us <i className="fa-solid fa-arrow-right"></i></Link></li>
               </ul>

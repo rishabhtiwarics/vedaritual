@@ -333,12 +333,12 @@
   transition-timing-function: ease !important;
 }
 
-.swiper-slide {
+.swiper-hero .swiper-slide {
   opacity: 0 !important;
   transition: opacity 900ms cubic-bezier(0.45, 0, 0.55, 1) !important;
 }
 
-.swiper-slide-active {
+.swiper-hero .swiper-slide-active {
   opacity: 1 !important;
 }
 

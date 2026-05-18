@@ -4,7 +4,6 @@ import Layout from './components/layout/Layout';
 import Home from './pages/Home';
 import Shop from './pages/Shop';
 import About from './pages/About';
-import OurStory from './pages/OurStory';
 import Cart from './pages/Cart';
 import LoginPage from './pages/auth/LoginPage';
 import RegisterPage from './pages/auth/RegisterPage';
@@ -20,7 +19,6 @@ function App() {
         <Route path="/"               element={<Home />} />
         <Route path="/shop"           element={<Shop />} />
         <Route path="/about"          element={<About />} />
-        <Route path="/our-story"      element={<OurStory />} />
         <Route path="/contact"        element={<Contact />} />
         <Route path="/cart"           element={<Cart />} />
         <Route path="/checkout"       element={<CheckoutPage />} />

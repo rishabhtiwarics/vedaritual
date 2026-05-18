@@ -8,7 +8,8 @@ const initialState = {
       name: "Ashwagandha Gold",
       price: 1850,
       image: "/images/product/1.jfif",
-      category: "Stress Relief"
+      category: "Stress Relief",
+      shortDescription: "Relieves stress and restores vitality."
     },
     {
       id: 2,
@@ -16,7 +17,8 @@ const initialState = {
       name: "Saffron Glow",
       price: 2450,
       image: "/images/product/2.jfif",
-      category: "Skin Care"
+      category: "Skin Care",
+      shortDescription: "Illuminates skin with pure saffron."
     },
     {
       id: 3,
@@ -24,7 +26,8 @@ const initialState = {
       name: "Brahmi Focus",
       price: 950,
       image: "/images/product/3.jfif",
-      category: "Cognitive"
+      category: "Cognitive",
+      shortDescription: "Enhances mental clarity and focus."
     },
     {
       id: 4,
@@ -32,7 +35,8 @@ const initialState = {
       name: "Neem Purify",
       price: 1250,
       image: "/images/product/4.jfif",
-      category: "Body Care"
+      category: "Body Care",
+      shortDescription: "Deeply cleanses and detoxifies skin."
     },
     {
       id: 5,
@@ -40,7 +44,8 @@ const initialState = {
       name: "Rose Water",
       price: 750,
       image: "/images/product/5.jfif",
-      category: "Skin Care"
+      category: "Skin Care",
+      shortDescription: "Hydrates and tones for a fresh look."
     },
     {
       id: 6,
@@ -48,7 +53,8 @@ const initialState = {
       name: "Bhringraj Vital",
       price: 1550,
       image: "/images/product/6.jfif",
-      category: "Hair Care"
+      category: "Hair Care",
+      shortDescription: "Nourishes scalp and strengthens hair."
     }
   ],
   loading: false,

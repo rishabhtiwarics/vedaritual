@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SeasonalEdit from '../components/home/SeasonalEdit';
 
 const About = () => {
   return (
+    <>
     <div className="about-page-root" style={{ background: '#ffffff', minHeight: '100vh' }}>
       
       {/* ── Hero Banner ── */}
@@ -1235,6 +1237,8 @@ const About = () => {
       </section>
 
     </div>
+      <SeasonalEdit />
+    </>
   );
 };
 
